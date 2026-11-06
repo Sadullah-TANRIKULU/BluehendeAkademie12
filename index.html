@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blühende Akademie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./assets/sunflower.png" type="image/x-icon" />
+  <meta name="theme-color" content="#896C6C" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="title" id="titel">Blühende Akademie</h1>
+    <select id="sprache">
+      <option value="de">🇨🇭</option>
+      <option value="tr">🇹🇷</option>
+    </select>
+  </header>
+
+  <main>
+    <p class="bismillah">بسم الله الرحمن الرحيم</p>
+
+    <section class="image-row">
+      <p id="erstefrage">Was denkst du??</p>
+      <div>
+        <dialog id="bild1dialog">
+          <p id="bild1erklaerung">
+            <strong>Resul neden mucize gösterir:</strong><br />
+            Nasıl ki, sen bir pâdişahın meclisinde ve dâire‑i nazarında desen ki: “Pâdişah beni filân işe memur etmiş.”
+            Senden o dâvâya bir delil istenilse; pâdişah “evet” dese, nasıl seni tasdik eder, öyle de; âdetini ve
+            vaziyetini senin iltimasınla değiştirirse; “evet” sözünden daha kat'î, daha sağlam, senin dâvânı tasdik
+            eder.
+          </p>
+          <button onclick="document.getElementById('bild1dialog').close()">
+            Close
+          </button>
+        </dialog>
+        <img src="assets/schakk-i-kamer.jpeg" alt="Bild 1"
+          onclick="document.getElementById('bild1dialog').showModal()" />
+
+        <dialog id="bild2dialog">
+          <p id="bild2erklaerung">
+            <strong>Mucizeye rağmen neden inanmadılar:</strong><br />
+            Çünkü sırr‑ı imtihan ve hikmet‑i teklif iktiza eder ki, akla kapı açılsın ve aklın ihtiyarı elinden
+            alınmasın. Eğer gayet bedîhî bir sûrette olsa, o vakit aklın ihtiyarı kalmaz. Ebû Cehil de, Ebû Bekir gibi
+            tasdik eder. İmtihan ve teklifin faydası kalmaz. Kömür ile elmas bir seviyede kalırdı.
+          </p>
+          <button onclick="document.getElementById('bild2dialog').close()">
+            Close
+          </button>
+        </dialog>
+        <img src="assets/mucize-aklin-ihtiyarini-elinden-almaz.jpeg" alt="Bild 2"
+          onclick="document.getElementById('bild2dialog').showModal()" />
+      </div>
+    </section>
+
+    <section class="image-row">
+      <p id="zweitefrage">Was denkst du??</p>
+      <div>
+        <dialog id="bild3dialog">
+          <p id="bild3erklaerung">
+            Hem – nakl‑i sahîh-i kat'î ile – Sa'd İbn‑i Ebî Vakkâs gayet ağır hasta iken ona fermân etmiş: <span
+              dir="rtl" class="noto-naskh-arabic-dua">لَعَلَّكَ تُخَلَّفُ حَتّٰى يَنْتَفِعَ بِكَ اَقْوَامٌ وَيَسْتَضِرَّ
+              بِكَ اٰخَرُونَ</span> deyip, ileride büyük bir kumandan olacağını, çok fütûhât yapacağını, çok milletler
+            ve kavimler ondan menfaat görüp, yani İslâm olup ve çoklar zarar görecek, yani devletleri onun eliyle harap
+            olacağını haber vermiş. Haber verdiği gibi çıkmış. Hazret‑i Sa'd, Ordu‑yu İslâm başına geçti. Devlet‑i
+            İraniye’yi zîr ü zeber etti; çok kavimlerin dâire‑i İslâm’a ve hidayete girmelerine sebep oldu.
+          </p>
+          <button onclick="document.getElementById('bild3dialog').close()">
+            Close
+          </button>
+        </dialog>
+        <img src="assets/sad-bin-ebi-vakkas1.jpeg" alt="Bild 3"
+          onclick="document.getElementById('bild3dialog').showModal()" />
+
+        <dialog id="bild4dialog">
+          <p id="bild4erklaerung">
+            Hem – nakl‑i sahîh-i kat'î ile – îmâna gelen Habeş Meliki olan Necâşî, hicretin yedinci senesinde vefât
+            ettiği gün ashâbına haber vermiş, hattâ cenaze namazını kılmış. Bir hafta sonra cevap geldi ki, aynı günde
+            vefât etmiş.
+          </p>
+          <button onclick="document.getElementById('bild4dialog').close()">
+            Close
+          </button>
+        </dialog>
+        <img src="assets/necasinin-vefati.jpeg" alt="Bild 4"
+          onclick="document.getElementById('bild4dialog').showModal()" />
+      </div>
+    </section>
+
+    <section class="image-row">
+      <p id="drittefrage">Warum ist es so??</p>
+      <div>
+        <dialog id="bild5dialog">
+          <p id="bild5erklaerung">
+            Hem Enes İbn‑i Mâlik’in halası olan Ümm‑ü Haram’ın hânesinde uykudan kalkmış, tebessüm edip fermân
+            etmiş:<span dir="rtl" class="noto-naskh-arabic-dua"> رَاَيْتُ اُمَّت۪ي يَغْزُونَ فِي الْبَحْرِ كَالْمُلُوكِ
+              عَلَى الْاَسِرَّةِ </span> Ümm‑ü Haram niyâz etmiş: “Duâ ediniz, ben de onlarla beraber olayım.” Fermân
+            etmiş: “Beraber olacaksın.” Kırk sene sonra, zevci olan Ubâde İbn‑i Sâmit refâkatiyle Kıbrıs’ın fethine
+            gitmiş; Kıbrıs’ta vefât edip, mezarı ziyaretgâh olmuş. Haber verdiği gibi aynen zuhûr etmiş.
+          </p>
+          <button onclick="document.getElementById('bild5dialog').close()">
+            Close
+          </button>
+        </dialog>
+
+        <img src="assets/ummu-Haram-vefat-kibris.jpeg" alt="Bild 5"
+          onclick="document.getElementById('bild5dialog').showModal()" />
+
+        <dialog id="bild6dialog">
+          <p id="bild6erklaerung">
+            Hem – nakl‑i sahîh-i kat'î ile – fermân etmiş ki:<span dir="rtl" class="noto-naskh-arabic-dua"> وَتُفْتَحُ
+              خَيْبَرُ عَلٰى يَدَىْ عَلِيٍّ </span> deyip, “Hayber Kalesinin fethi, Ali’nin eliyle olacak.” Me'mûlün pek
+            fevkınde, ikinci gün bir mûcize-i Nebeviye olarak, Hayber Kalesinin kapısını Hazret‑i Ali çekip kalkan gibi
+            istîmâl ederek, fethe muvaffak olduktan sonra kapıyı yere atmış; sekiz kuvvetli adam, o kapıyı yerden
+            kaldıramamış. Bir rivâyette kırk adam kaldıramamış.
+          </p>
+          <button onclick="document.getElementById('bild6dialog').close()">
+            Close
+          </button>
+        </dialog>
+
+        <img src="assets/hayber-kapisi-Hz-Ali.jpeg" alt="Bild 6"
+          onclick="document.getElementById('bild6dialog').showModal()" />
+      </div>
+    </section>
+
+    <!-- YouTube Video Bildschirmbreit -->
+    <section class="video-section">
+      <img src="assets/angry birds_green bird_angry birds_green bird.png" alt="Angry Bird Icon"
+        class="angrybird-icon" />
+
+      <iframe src="https://www.youtube.com/embed/IzzurAEzsVw?start=3663"
+        title="Evidence of Knowledge and Will | Evidences Of Tawheed (Oneness Of God) 3" frameborder="0" allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="simplenote-section">
+      <p id="simplenote">
+        Nachdenken ist sehr nützlich! Lasst uns zusammen lesen den Text zum
+        Nachdenken!
+      </p>
+      <a href="./Text-zum-Nachdenken.txt" target="_blank" rel="noopener noreferrer">
+        <img src="assets/angry birds_yellow bird_angry birds_yellow bird.png" alt="Angry Bird Icon"
+          class="angrybird-icon" />
+        <img src="./assets/redirect.jpg" alt="" width="30" height="30" />
+      </a>
+    </section>
+
+    <section class="text-section">
+      <p id="zumtranskript">
+        Lasst uns ein paar Sätze zu diesem Thema ins Deutsch übersetzen!
+      </p>
+      <a href="./uebersetzung.txt" target="_blank" rel="noopener noreferrer"><img
+          src="assets/blue bird_angry birds_blue bird_angry birds.png" alt="Angry Bird Icon"
+          class="angrybird-icon" /><img src="./assets/redirect.jpg" alt="" width="30" height="30" /></a>
+    </section>
+
+    <section class="text-section">
+      <p id="kahoot">Kahoot Zeit!</p>
+      <a href="https://create.kahoot.it/share/kainattaki-kusursuz-duzen/cea572e5-2d74-4106-84c9-ef8a6d34d064"
+        target="_blank" rel="noopener noreferrer"><img src="assets/red bird_angry birds_angry birds_red bird.png"
+          alt="Angry Bird Icon" class="angrybird-icon" /><img src="./assets/redirect.jpg" alt="" width="30"
+          height="30" /></a>
+    </section>
+
+    <!-- Weitere Texte -->
+    <section class="text-section">
+      <p id="zurbuecher">
+        Sag ein Wort und finde es in deinem Telefon, wähl eine Abschnitt und
+        lies!
+      </p>
+      <a href="https://pirlantaoku.com/" target="_blank" rel="noopener noreferrer"><img
+          src="assets/black bird_black bird_angry birds_angry birds.png" alt="Angry Bird Icon"
+          class="angrybird-icon" /><img src="./assets/redirect.jpg" alt="" width="30" height="30" /></a>
+    </section>
+
+    <!-- Google Suche eingebettet -->
+    <section class="search-section">
+      <p id="suchefaehigkeit">
+        Recherchieren Sie, Hadithe über guten Charakter (gute Moral)?
+      </p>
+      <img src="assets/72182_red bird_angry birds_red bird_angry birds.png" alt="Angry Bird Icon"
+        class="angrybird-icon" />
+      <script async src="https://cse.google.com/cse.js?cx=e118718434c194f57"></script>
+      <div class="gcse-search"></div>
+    </section>
+
+    <section class="text-section">
+      <img src="assets/white bird_angry birds_white bird_angry birds.png" alt="Angry Bird Icon"
+        class="angrybird-icon" />
+      <p id="gebetuebung">Namaz Übung! Lies laut vor!</p>
+    </section>
+
+    <section class="text-section">
+      <img src="assets/black bird_black bird_angry birds_angry birds.png" alt="Angry Bird Icon"
+        class="angrybird-icon" />
+      <p id="gebetauswendiglernen">
+        Zeit, ein Gebet auswendig zu lernen! Zusammen und 7 Mal in der Reihe
+        laut vorlesen!
+      </p>
+      <details class="dua-ezber noto-naskh-arabic-dua" dir="ltr">
+        <summary style="line-height: 2rem" dir="rtl">
+          يَا مَالِكَ الْمُلْكِ ,يَا كَث۪يرَ الْخَيْرِ ,يَا كَر۪يمَ الصَّفْحِ
+        </summary>
+        Ey mülkün yegâne maliki olan! Ey iyilikleri pek çok olan! Ey afv u müsamahası bol olan!
+      </details>
+    </section>
+    <section class="text-section">
+      <p id="fazit">
+        Lass uns heute, was wir gefühlen haben, was wir verstanden haben, was
+        wir gedachten haben, was wir gelernt haben als einen kurzen Text im
+        Blog auf Deutsch oder auf Türkisch schreiben!
+      </p>
+      <a href="https://blogbluehendeakademie.onrender.com" target="_blank" rel="noopener noreferrer"><img
+          src="assets/blue bird_angry birds_blue bird_angry birds.png" alt="Angry Bird Icon"
+          class="angrybird-icon" /><img src="./assets/redirect.jpg" alt="" width="30" height="30" /></a>
+    </section>
+
+    <p class="thanks-text">والحمد لله رب العالمين</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

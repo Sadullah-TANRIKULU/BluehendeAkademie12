@@ -1,0 +1,111 @@
+/* Farbpalette: #896C6C #E5BEB5 #EEE6CA #F5FAE1 */
+
+body {
+  margin: 6.7rem 0 2rem 0;
+  font-family: 'Kanit', sans-serif;
+  background-color: #F5FAE1;
+  color: #896C6C;
+  line-height: 1.5;
+  width: 97vw;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+label,
+select {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.1rem;
+  padding: 0.3em;
+  margin: 0.6em;
+}
+
+select {
+  border-radius: 6px;
+  border: 1px solid #1c352d;
+  background: rgba(166, 178, 139, 0.3);
+  color: #1c352d;
+}
+
+h1.title {
+  font-family: 'Acme', cursive;
+  font-size: 2.8rem;
+  text-align: center;
+  background-color: #E5BEB5;
+  margin: 0;
+  padding: 1rem;
+  color: #896C6C;
+}
+
+.bismillah {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.image-row p {
+  text-align: center;
+}
+
+.image-row div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.image-row img {
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 6px #E5BEB5;
+}
+
+.video-section,
+.simplenote-section,
+.text-section,
+.search-section,
+.learn-with-game-section {
+  margin: 2rem 1rem;
+}
+
+.video-section iframe {
+  aspect-ratio: 16 / 9;
+
+}
+
+.text-section .dua-ezber {
+  text-align: left;
+  font-size: 2.7rem;
+}
+
+.angrybird-icon {
+  width: 32px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.noto-naskh-arabic-dua {
+  font-family: "Noto Naskh Arabic", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.thanks-text {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 3rem 0 1rem 0;
+}

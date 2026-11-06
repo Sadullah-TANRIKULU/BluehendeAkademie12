@@ -1,0 +1,16 @@
+{
+  "name": "Blühende Akademie",
+  "short_name": "Blühende Akademie",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#F5FAE1",
+  "theme_color": "#896C6C",
+  "icons": [
+    {
+      "src": "assets/sunflower.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
